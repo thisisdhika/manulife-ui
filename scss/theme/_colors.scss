@@ -1,0 +1,133 @@
+// Color system
+$white: #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #fafafa !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    '100': $gray-100,
+    '200': $gray-200,
+    '300': $gray-300,
+    '400': $gray-400,
+    '500': $gray-500,
+    '600': $gray-600,
+    '700': $gray-700,
+    '800': $gray-800,
+    '900': $gray-900,
+  ),
+  $grays
+);
+
+$blue: #0000c1 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$coral: #ec6453 !default;
+$violet: #604584 !default;
+$orange: #fd7e14 !default;
+$gold: #f49600 !default;
+$yellow: #ffc107 !default;
+$green: #00a758 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+$turquoise: #28d7cb !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    'blue': $blue,
+    'indigo': $indigo,
+    'purple': $purple,
+    'pink': $pink,
+    'red': $red,
+    'coral': $coral,
+    'violet': $violet,
+    'orange': $orange,
+    'gold': $gold,
+    'yellow': $yellow,
+    'green': $green,
+    'teal': $teal,
+    'cyan': $cyan,
+    'turquoise': $turquoise,
+    'gray': $gray-600,
+    'gray-dark': $gray-800,
+  ),
+  $colors
+);
+
+$primary: $green !default;
+@if $jh_theme {
+  $primary: $blue !default;
+}
+
+$secondary: $violet !default;
+$success: #06874e !default;
+$info: $cyan !default;
+$warning: #d77d28 !default;
+$danger: #a00e18 !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+  ),
+  $theme-colors
+);
+
+$darkNavy: #282b3e !default;
+$lightNavy: #34384b !default;
+$light3Navy: #5e6073 !default;
+$light4Navy: #8e90a2 !default;
+
+$typography-colors: () !default;
+$typography-colors: map-merge(
+  (
+    'darkNavy': $darkNavy,
+    'light3Navy': $light3Navy,
+    'light4Navy': $light4Navy,
+    'white': $white,
+  ),
+  $typography-colors
+);
+
+$darkCoral: #d03a39;
+
+$button-colors: () !default;
+$button-colors: map-merge(
+  (
+    'coral': $coral,
+    'darkCoral': $darkCoral,
+    'white': $white,
+  ),
+  $button-colors
+);
+
+$background-colors: () !default;
+$background-colors: map-merge(
+  (
+    'greyLight': $gray-200,
+    'white': $white,
+    'darkNavy': $darkNavy,
+    'lightNavy': $lightNavy,
+  ),
+  $background-colors
+);
